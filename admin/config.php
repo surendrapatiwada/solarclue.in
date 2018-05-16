@@ -11,7 +11,7 @@ define('HTTPS_CATALOG', 'http://localhost/solarclue.in/');
 define('DIR_APPLICATION', 'C:/wamp64/www/solarclue.in/admin/');
 define('DIR_SYSTEM', 'C:/wamp64/www/solarclue.in/system/');
 define('DIR_IMAGE', 'C:/wamp64/www/solarclue.in/image/');
-define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
+define('DIR_STORAGE', 'C:/wamp64/storage/');
 define('DIR_CATALOG', DIR_SYSTEM . 'catalog/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/template/');
