@@ -4,6 +4,7 @@
 */
 
 include_once(DIR_SYSTEM.'library/SpreadsheetReader/SpreadsheetReader.php');
+$language_id = 1;
 
 class ModelExtensionDExportImportImport extends Model
 {

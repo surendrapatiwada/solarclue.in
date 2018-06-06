@@ -261,6 +261,14 @@ class ControllerCommonColumnLeft extends Controller {
 				);	
 			}
 			
+			if ($this->user->hasPermission('access', 'sale/cancel')) {
+				$sale[] = array(
+					'name'	   => $this->language->get('text_cancel'),
+					'href'     => $this->url->link('sale/cancel', 'user_token=' . $this->session->data['user_token'], true),
+					'children' => array()		
+				);	
+			}
+			
 			// Voucher
 			$voucher = array();
 			

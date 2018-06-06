@@ -9,7 +9,7 @@ define('HTTPS_SERVER', 'http://localhost/solarclue.in/');
 define('DIR_APPLICATION', 'C:/wamp64/www/solarclue.in/catalog/');
 define('DIR_SYSTEM', 'C:/wamp64/www/solarclue.in/system/');
 define('DIR_IMAGE', 'C:/wamp64/www/solarclue.in/image/');
-define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
+define('DIR_STORAGE', 'C:/wamp64/storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');

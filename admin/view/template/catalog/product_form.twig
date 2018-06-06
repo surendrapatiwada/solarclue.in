@@ -1735,6 +1735,54 @@ $('#option a:first').tab('show');
 //--></script>
 <script type="text/javascript"><!--
 
+$('#input-cost_price').keyup(function() {
+    var $cost_price = $(this);
+
+    // this is the value before the keypress
+    var cost_pricebeforeVal = $cost_price.val();
+
+    setTimeout(function() {
+
+        // this is the value after the keypress
+        var cost_price = $cost_price.val();
+		
+		var price = document.getElementById("input-price").value;
+		
+		document.getElementById("input-profit").value = price-cost_price;
+		
+		document.getElementById("input-profit-per").value = parseFloat((price-cost_price)/price * 100).toFixed(2);
+		
+		
+    }, 0);
+});
+
+ /*$('#input-mrp').keyup(function() {
+    var $price = document.getElementById("input-mrp").value;
+
+    // this is the value before the keypress
+    //var pricebeforeVal = $price.val();
+
+    setTimeout(function() {
+
+        // this is the value after the keypress
+        //var price = $price.val();
+		
+		//var cost_price = document.getElementById("input-cost_price").value;
+		
+		//document.getElementById("input-profit").value = price-cost_price;
+		
+		//document.getElementById("input-profit-per").value = parseFloat((price-cost_price)/price * 100).toFixed(2);
+		
+		//alert(cost_price);
+		document.getElementById("ssp_message").innerHTML = "The Maximun Price That Can Be Entered : ";
+		//document.getElementById("ssp_value").innerHTML = json['sspValue'];
+		document.getElementById("input-ssp").value = parseFloat((price-cost_price)/price * 100).toFixed(2);
+		document.getElementById("ssp_message").style.color = '#0099e6';
+		document.getElementById("ssp_value").style.color = '#ff0066';
+		
+    }, 0);
+});*/
+
 $("#input-mrp").on("change", function(){
 	$.ajax({
 		url: 'index.php?route=catalog/product/calculateSSP&user_token={{ user_token }}&mrp=' +  encodeURIComponent($('input[id=\'input-mrp\']').val()),

@@ -49,7 +49,7 @@ class ModelExtensionModuleDExportImport extends Model {
         $results = array();
 
         $file = DIR_CONFIG.$this->codename.'/'.$codename.'.php';
-
+		
         if (file_exists($file)) {
             $_ = array();
 
